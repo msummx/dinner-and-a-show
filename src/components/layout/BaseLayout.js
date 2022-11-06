@@ -1,8 +1,12 @@
 import React from 'react'
+import Navigation from '../Navigation'
 
-const BaseLayout = () => {
+const BaseLayout = (props) => {
   return (
-    <div>BaseLayout</div>
+    <>
+    <Navigation />
+    {props.children}
+    </>
   )
 }
 

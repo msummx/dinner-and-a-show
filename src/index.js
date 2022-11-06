@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 import { legacy_createStore as createStore } from 'redux';
@@ -7,6 +8,8 @@ import { Provider } from 'react-redux';
 import reducer from './reducers/reducer';
 import BaseLayout from './components/layout/BaseLayout';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import CreatePlan from './components/CreatePlan';
+import MyPlans from './components/MyPlans';
 
 const store = (createStore(reducer))
 
@@ -18,6 +21,8 @@ root.render(
         <BaseLayout>
           <Routes>
             <Route path="/" element={<App />} />
+            <Route path="createplan" element={<CreatePlan />} />
+            <Route path="myplans" element={<MyPlans />} />
           </Routes>
         </BaseLayout>
       </Router>
