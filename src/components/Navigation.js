@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar'
 const Navigation = () => {
   return (
     <>
-    <Navbar bg="light">
+    <Navbar sticky="top" bg="light">
         <Container>
             <Navbar.Brand href="/">D&AS</Navbar.Brand>
             <Nav>

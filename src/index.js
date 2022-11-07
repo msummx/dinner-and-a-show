@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import App from './App';
+import App from './components/App';
 import { legacy_createStore as createStore } from 'redux';
 import { Provider } from 'react-redux';
 import reducer from './reducers/reducer';
