@@ -25,3 +25,20 @@ code {
 .home > h1 {
   text-align: center;
 }
+
+.CreatePlanRow {
+  width: 50%;
+  flex-direction: row;
+  margin: 1.5%;
+}
+
+.CreatePlanFormGroup {
+  display: flex;
+  justify-content: space-around;
+}
+
+.CreatePlanForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

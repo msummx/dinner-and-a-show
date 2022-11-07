@@ -1,9 +1,10 @@
 import React from 'react'
+import CreatePlanForm from './CreatePlanForm'
 
 const CreatePlan = () => {
   return (
     <>
-    Test
+    <CreatePlanForm />
     </>
   )
 }
