@@ -17,7 +17,7 @@ const CreatePlan = () => {
   if (second){
     return (
       <>
-      <h2>{choice.zip}</h2>
+      <h2>{choice.location}</h2>
       <h2>{choice.from}</h2>
       <h2>{choice.to}</h2>
       <h2>{choice.radius}</h2>

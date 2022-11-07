@@ -27,7 +27,7 @@ code {
 }
 
 .CreatePlanRow {
-  width: 50%;
+  width: 25%;
   flex-direction: row;
   margin: 1.5%;
 }
