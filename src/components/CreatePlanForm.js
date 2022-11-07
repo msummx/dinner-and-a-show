@@ -4,6 +4,8 @@ import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import { addUserChoice } from '../actions/actions';
+import { useDispatch } from 'react-redux';
 
 const CreatePlanForm = () => {
     const [zip, setZip] = useState('')
@@ -12,12 +14,13 @@ const CreatePlanForm = () => {
     const [radius, setRadius] = useState('')
     const [concerts, setConcerts] = useState(false)
     const [theatre, setTheatre] = useState(false)
+    const dispatch = useDispatch()
 
     const handleSubmit = e => {
         e.preventDefault()
 
         const userChoice = {zip, from, to, radius, concerts, theatre}
-        console.log(userChoice)
+        dispatch(addUserChoice(userChoice))
     }
 
   return (
