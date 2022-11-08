@@ -7,7 +7,7 @@ const Plan = ({planObj}) => {
     <Card style={{ width: '18rem' }} className="event">
         <Card.Img variant="top" src={planObj.userEvent.images[4].url} />
         <Card.Body>
-            <Card.Title><a href={planObj.userEvent.url}>{planObj.userEvent.name}</a></Card.Title>
+            <Card.Title><a href={planObj.userEvent.url} target="_blank">{planObj.userEvent.name}</a></Card.Title>
             <Card.Text>
                 {dayjs(planObj.userEvent.dates.start.localDate + planObj.userEvent.dates.start.localTime).format('MMM D, YYYY - h:mm a')}
                 <br />

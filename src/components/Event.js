@@ -8,7 +8,7 @@ const Event = ({eventObj, handleAdd}) => {
     <Card style={{ width: '18rem' }} className="event">
         <Card.Img variant="top" src={eventObj.images[4].url} />
         <Card.Body>
-            <Card.Title><a href={eventObj.url}>{eventObj.name}</a></Card.Title>
+            <Card.Title><a href={eventObj.url} target='_blank'>{eventObj.name}</a></Card.Title>
             <Card.Text>
                 {dayjs(eventObj.dates.start.localDate + eventObj.dates.start.localTime).format('MMM D, YYYY - h:mm a')}
                 <br />

@@ -27,11 +27,14 @@ const Events = () => {
   
   if (events !== undefined){
     return (
+      <>
+      <h2>Events</h2>
         <div className="events">
             {events.map(event => {
                 return <Event eventObj={event} key={event.id} handleAdd={handleAdd} />
             })}
         </div>
+      </>
     )
   }
 }

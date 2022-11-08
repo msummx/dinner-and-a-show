@@ -30,9 +30,13 @@ const Restaurants = () => {
   
     if (restaurants !== undefined){
         return (
-            <div className="events">{restaurants.map(restaurant => {
+            <>
+            <h2>Restaurants</h2>
+            <div className="events">
+                {restaurants.map(restaurant => {
                 return <Restaurant restaurantObj={restaurant} key={restaurant.fsq_id} handleAdd={handleAdd} />
             })}</div>
+            </>
           )
     }
 }
