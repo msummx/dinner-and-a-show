@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import dayjs from 'dayjs';
+import Row from 'react-'
 
 const Plan = ({planObj}) => {
   return (
@@ -19,13 +20,15 @@ const Plan = ({planObj}) => {
             </Card.Text>
         </Card.Body>
         <Card.Body>
-                <Card.Title>{planObj.userRestaurant.name}</Card.Title>
-                <Card.Text>
-                    {planObj.userRestaurant.vicinity}
-                    <br />
-                    <b>{planObj.userRestaurant.rating} / 5</b>
-                </Card.Text>
-            </Card.Body>
+            <Card.Title>{restaurantObj.name}</Card.Title>
+            <Card.Text>
+                {restaurantObj.location.address}
+                <br />
+                {restaurantObj.location.dma + ' ' + restaurantObj.location.region + ', ' + restaurantObj.location.postcode}
+                <br /><br />
+                <b>{restaurantObj.distance}m From Venue</b>
+            </Card.Text>
+        </Card.Body>
     </Card>
   )
 }

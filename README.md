@@ -3,7 +3,7 @@
 ## APIs
 
 [TicketMaster](https://developer.ticketmaster.com/products-and-docs/apis/getting-started/)
-[Places API](https://developers.google.com/maps/documentation/places/web-service)
+[FourSquare Places API](https://location.foursquare.com/places/docs/home)
 [EmailJS](https://www.emailjs.com/docs/introduction/how-does-emailjs-work/)
 
 ## Credits

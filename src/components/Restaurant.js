@@ -8,9 +8,11 @@ const Restaurant = ({restaurantObj, handleAdd}) => {
             <Card.Body>
                 <Card.Title>{restaurantObj.name}</Card.Title>
                 <Card.Text>
-                    {restaurantObj.vicinity}
+                    {restaurantObj.location.address}
                     <br />
-                    <b>{restaurantObj.rating} / 5</b>
+                    {restaurantObj.location.dma + ' ' + restaurantObj.location.region + ', ' + restaurantObj.location.postcode}
+                    <br /><br />
+                    <b>{restaurantObj.distance}m From Venue</b>
                     <br />
                     <Button variant="light" onClick={()=>{handleAdd(restaurantObj)}}>Add To Plan</Button>
                 </Card.Text>

@@ -10,7 +10,9 @@ const Restaurants = () => {
 
     useEffect(() => {
         const getRestaurants = async () => {
-            await fetch(`https://maps.googleapis.com/maps/api/place/nearbysearch/json?type=restaurant&location=${event._embedded.venues[0].location.latitude}%2C${event._embedded.venues[0].location.longitude}&radius=1500&libaries=places&key=${process.env.REACT_APP_PLACES_API}`)
+            await fetch(`https://api.foursquare.com/v3/places/search?ll=${event._embedded.venues[0].location.latitude}%2C${event._embedded.venues[0].location.longitude}&radius=3000&categories=13065`, {
+                headers: {Authorization: process.env.REACT_APP_PLACES_API}
+            })
             .then((response) => {
                 return response.json()})
             .then((data)=> {
@@ -29,7 +31,7 @@ const Restaurants = () => {
     if (restaurants !== undefined){
         return (
             <div className="events">{restaurants.map(restaurant => {
-                return <Restaurant restaurantObj={restaurant} key={restaurant.place_id} handleAdd={handleAdd} />
+                return <Restaurant restaurantObj={restaurant} key={restaurant.fsq_id} handleAdd={handleAdd} />
             })}</div>
           )
     }
