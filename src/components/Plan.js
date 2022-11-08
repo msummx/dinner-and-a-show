@@ -19,13 +19,13 @@ const Plan = ({planObj}) => {
             </Card.Text>
         </Card.Body>
         <Card.Body>
-            <Card.Title>{restaurantObj.name}</Card.Title>
+            <Card.Title>{planObj.userRestaurant.name}</Card.Title>
             <Card.Text>
-                {restaurantObj.location.address}
+                {planObj.userRestaurant.location.address}
                 <br />
-                {restaurantObj.location.dma + ' ' + restaurantObj.location.region + ', ' + restaurantObj.location.postcode}
+                {planObj.userRestaurant.location.dma + ' ' + planObj.userRestaurant.location.region + ', ' + planObj.userRestaurant.location.postcode}
                 <br /><br />
-                <b>{restaurantObj.distance}m From Venue</b>
+                <b>{planObj.userRestaurant.distance}m From Venue</b>
             </Card.Text>
         </Card.Body>
     </Card>
