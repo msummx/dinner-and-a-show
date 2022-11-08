@@ -3,7 +3,7 @@
 ## APIs
 
 [TicketMaster](https://developer.ticketmaster.com/products-and-docs/apis/getting-started/)
-[OpenTable Public API](https://github.com/sosedoff/opentable)
+[Places API](https://developers.google.com/maps/documentation/places/web-service)
 [EmailJS](https://www.emailjs.com/docs/introduction/how-does-emailjs-work/)
 
 ## Credits

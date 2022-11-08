@@ -4,3 +4,17 @@ export const addUserChoice = userObj => {
         payload: userObj
     }
 }
+
+export const addEvent = eventObj => {
+    return {
+        type: 'ADD_EVENT',
+        payload: eventObj
+    }
+}
+
+export const addPlan = (planObj) => {
+    return {
+        type: 'ADD_PLAN',
+        payload: planObj
+    }
+}
