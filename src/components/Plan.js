@@ -18,6 +18,14 @@ const Plan = ({planObj}) => {
                 {planObj.userEvent._embedded.venues[0].city.name + ' ' + planObj.userEvent._embedded.venues[0].state.stateCode + ', ' + planObj.userEvent._embedded.venues[0].postalCode}
             </Card.Text>
         </Card.Body>
+        <Card.Body>
+                <Card.Title>{planObj.userRestaurant.name}</Card.Title>
+                <Card.Text>
+                    {planObj.userRestaurant.vicinity}
+                    <br />
+                    <b>{planObj.userRestaurant.rating} / 5</b>
+                </Card.Text>
+            </Card.Body>
     </Card>
   )
 }

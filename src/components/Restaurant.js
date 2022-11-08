@@ -10,7 +10,7 @@ const Restaurant = ({restaurantObj, handleAdd}) => {
                 <Card.Text>
                     {restaurantObj.vicinity}
                     <br />
-                    <h2>{restaurantObj.rating} / 5</h2>
+                    <b>{restaurantObj.rating} / 5</b>
                     <br />
                     <Button variant="light" onClick={()=>{handleAdd(restaurantObj)}}>Add To Plan</Button>
                 </Card.Text>

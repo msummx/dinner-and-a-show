@@ -10,7 +10,7 @@ const Events = () => {
 
   useEffect(() => {
     const getEvents = async () => {
-      await fetch(`https://app.ticketmaster.com/discovery/v2/events.json?geoPoint=${location}&radius=${radius}&startDateTime=${from}T00:00:00Z&endDateTime=${to}T23:59:59Z&apikey=${process.env.REACT_APP_TM_API}}`)
+      await fetch(`https://app.ticketmaster.com/discovery/v2/events.json?geoPoint=${location}&radius=${radius}&startDateTime=${from}T00:00:00Z&endDateTime=${to}T23:59:59Z&apikey=${process.env.REACT_APP_TM_API}`)
       .then((response) => {
         return response.json()})
       .then((data) => {
