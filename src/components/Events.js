@@ -19,7 +19,7 @@ const Events = () => {
     }
 
     getEvents()
-  }, [])
+  }, [location, radius, from, to])
 
   const handleAdd = (eventObj) => {
     dispatch(addEvent(eventObj))

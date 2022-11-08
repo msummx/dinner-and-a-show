@@ -19,7 +19,7 @@ const Restaurants = () => {
         }
         
         getRestaurants()
-    }, [])
+    }, [event._embedded.venues])
 
     const handleAdd = restaurantObj => {
         const planObj = {userEvent: event, userRestaurant: restaurantObj}
