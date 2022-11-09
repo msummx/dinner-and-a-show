@@ -10,6 +10,7 @@ import BaseLayout from './components/layout/BaseLayout';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import CreatePlan from './components/CreatePlan';
 import MyPlans from './components/MyPlans';
+import Finalize from './components/Finalize';
 
 const store = (createStore(reducer))
 
@@ -23,6 +24,7 @@ root.render(
             <Route path="/" element={<App />} />
             <Route path="createplan" element={<CreatePlan />} />
             <Route path="myplans" element={<MyPlans />} />
+            <Route path="finalize" element={<Finalize />} />
           </Routes>
         </BaseLayout>
       </Router>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import dayjs from 'dayjs';
+import {Link} from 'react-router-dom'
 
 const Plan = ({planObj}) => {
   return (
@@ -28,6 +29,7 @@ const Plan = ({planObj}) => {
                 <b>{planObj.userRestaurant.distance}m From Venue</b>
             </Card.Text>
         </Card.Body>
+        <Link to="/finalize" className="btn btn-light" state={{planObj}}>Finalize</Link>
     </Card>
   )
 }
